@@ -1,0 +1,59 @@
+{
+  "name": "beem-africa",
+  "version": "1.0.0",
+  "description": "A JavaScript/Node.js library to ease the integration with the Beem Africa SMS Gateway",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beem-africa/js-client.git"
+  },
+  "keywords": [
+    "beem-africa",
+    "beem-sms-api",
+    "javascript-beem",
+    "beem-africa-package",
+    "beem-africa-javascript",
+    "sms-gateway",
+    "otp",
+    "airtime"
+  ],
+  "author": "Patrick Waithaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beem-africa/js-client/issues"
+  },
+  "homepage": "https://github.com/beem-africa/js-client#readme",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.0.0",
+    "typescript": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
